@@ -9,10 +9,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @Entity
+@ToString 
 public class Employee {
 	@Id //generate primary key make unique id
 	private int id;
@@ -24,4 +26,5 @@ public class Employee {
 	private LocalDate doj;
 	@CreationTimestamp  //its automatically save booking date and time 
 	private LocalDate registrationDate;
+	
 }

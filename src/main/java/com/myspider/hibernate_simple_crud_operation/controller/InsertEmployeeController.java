@@ -11,12 +11,15 @@ public class InsertEmployeeController {
 	
 	Employee employee = new Employee();
 	
-	employee.setId(6352);
-	employee.setName("Shradha");
-	employee.setEmail("shradha456@gmail.com");
-	employee.setPhone(4563987423l);
-	employee.setDoj(LocalDate.parse("2026-10-22"));
+	employee.setId(6356);
+	employee.setName("Siya");
+	employee.setEmail("siya098@gmail.com");
+	employee.setPhone(9875645606l);
+	employee.setDoj(LocalDate.parse("2026-09-09"));
 	
 	dao.saveEmployeeDao(employee);
+	dao.updateEmployeeByEmployeeIdDao(6355 , "Sonam" , 2345575891l);
+	dao.deleteEmployeeByEmployeeIdDao(6356);
+	
 	}
 }
